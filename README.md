@@ -40,3 +40,12 @@ Validation Accuracy: 66.3%
 |Conv|10|(4,4)|Softmax|
 |||||
 |Trainable params:|93,738|
+
+
+## 3. Inception Network with CIFAR-10:
+Pretrained Inception network was used as base architecture.
+a. Pretrained Inception network with weights derived from imagenet was used as base architecture.
+b. Images were upsampled 3 times to get the image size of (256x256).
+c. FC Layers were used as closing layers to get finely trained model.
+
+Validation Accuracy achieved at the end of 2nd epoch: 70%
