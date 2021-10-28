@@ -26,28 +26,6 @@ CIFAR dataset has 10 class dataset and 100 class benchmark datasets. For practic
 
 Validation Accuracy: 66.3%
 
-Architecture Design:
-
-| Layer | Filters | Kernel | Activation |
-|:-----:|:-------:|:------:|:----------:|
-|Conv|32|(3,3)|ReLU|
-|Conv|32|(3,3)|ReLU|
-|MaxPool|--|(2,2)|--|
-|Conv|64|(3,3)|ReLU|
-|Conv|64|(3,3)|ReLU|
-|MaxPool|--|(2,2)|--|
-|Conv|128|(3,3)|ReLU|
-|Conv|128|(3,3)|ReLU|
-|MaxPool|--|(2,2)|--|
-|Conv|256|(3,3)|ReLU|
-|FC|1024|--|ReLU|
-|FC|256|--|ReLU|
-|FC|5|--|Softmax|
-|||||
-|Optimizer:|Adam|||
-|Loss:|Categorical cross entropy|||
-
-
 ## 2. CNN for MNIST dataset with less than 10,000 parameters:
 
 | Layer | Filters | Kernel | Activation |
