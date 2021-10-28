@@ -1,4 +1,4 @@
-# Computer-Vision-Exercises
+# Computer Vision - Exercises
 
 This repository consists of all the projects completed during my learning phase in computer vision.
 
@@ -22,3 +22,43 @@ CIFAR dataset has 10 class dataset and 100 class benchmark datasets. For practic
 
 
 ### c. Flowers Dataset
+[Flowers dataset](https://www.kaggle.com/alxmamaev/flowers-recognition) contains 4317 images belonging to 5 different classes (daisy, dandelion, rose, sunflower, tulip). Each image is in RGB format and has size (224x224). Since the data is huge, ImageDatagenerator is used to generate batch of images for each epoch.
+
+Validation Accuracy: 66.3%
+
+Architecture Design:
+
+| Layer | Filters | Kernel | Activation |
+|:-----:|:-------:|:------:|:----------:|
+|Conv|32|(3,3)|ReLU|
+|Conv|32|(3,3)|ReLU|
+|MaxPool|--|(2,2)|--|
+|Conv|64|(3,3)|ReLU|
+|Conv|64|(3,3)|ReLU|
+|MaxPool|--|(2,2)|--|
+|Conv|128|(3,3)|ReLU|
+|Conv|128|(3,3)|ReLU|
+|MaxPool|--|(2,2)|--|
+|Conv|256|(3,3)|ReLU|
+|FC|1024|--|ReLU|
+|FC|256|--|ReLU|
+|FC|5|--|Softmax|
+|||||
+|Optimizer:|Adam|||
+|Loss:|Categorical cross entropy|||
+
+
+## 2. CNN for MNIST dataset with less than 10,000 parameters:
+
+| Layer | Filters | Kernel | Activation |
+|:-----:|:-------:|:------:|:----------:|
+|Conv|32|(3,3)|ReLU|
+|Conv|32|(3,3)|ReLU|
+|MaxPool|--|(2,2)|--|
+|Conv|32|(3,3)|ReLU|
+|Conv|32|(3,3)|ReLU|
+|Conv|64|(3,3)|ReLU|
+|Conv|64|(3,3)|ReLU|
+|Conv|10|(4,4)|Softmax|
+|||||
+|Trainable params:|93,738|
