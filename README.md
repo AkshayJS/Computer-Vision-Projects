@@ -56,3 +56,12 @@ a. CIFAR-10 dataset was taken as benchmark dataset
 b. Inception V1 block was designed as on [Inception Research Paper](https://arxiv.org/pdf/1409.4842.pdf)
 
 Validation Accuracy: 81.11%
+
+![Inception block](https://miro.medium.com/max/1400/1*DKjGRDd_lJeUfVlY50ojOA.png)
+
+## 5. VGG-16 and VGG-19 implementation:
+Both VGG-16 and VGG-19 implementation was based on the [research paper](https://arxiv.org/pdf/1409.1556). 
+a.  The architectures were tested on Flowers dataset.
+b.  ImagaDataGenerator was used training in each epoch.
+
+Validation Accuracy: 57%
