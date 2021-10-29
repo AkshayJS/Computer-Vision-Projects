@@ -49,3 +49,10 @@ b. Images were upsampled 3 times to get the image size of (256x256).
 c. FC Layers were used as closing layers to get finely trained model.
 
 Validation Accuracy achieved at the end of 2nd epoch: 70%
+
+## 4. Inception implementation from scratch:
+Complete implemention of Inception modules along with aux outputs.
+a. CIFAR-10 dataset was taken as benchmark dataset
+b. Inception V1 block was designed as on [Inception Research Paper](https://arxiv.org/pdf/1409.4842.pdf)
+
+Validation Accuracy: 81.11%
