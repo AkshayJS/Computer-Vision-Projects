@@ -45,17 +45,18 @@ Validation Accuracy: 66.3%
 ## 3. Inception Network with CIFAR-10:
 Pretrained Inception network was used as base architecture.
 
-a. Pretrained Inception network with weights derived from imagenet was used as base architecture.
-b. Images were upsampled 3 times to get the image size of (256x256).
-c. FC Layers were used as closing layers to get finely trained model.
+- Pretrained Inception network with weights derived from imagenet was used as base architecture.
+- Images were upsampled 3 times to get the image size of (256x256).
+- FC Layers were used as closing layers to get finely trained model.
 
 Validation Accuracy achieved at the end of 2nd epoch: 70%
 
 ## 4. Inception implementation from scratch:
 Complete implemention of Inception modules along with aux outputs.
 
-a. CIFAR-10 dataset was taken as benchmark dataset
-b. Inception V1 block was designed as on [Inception Research Paper](https://arxiv.org/pdf/1409.4842.pdf)
+- CIFAR-10 dataset was taken as benchmark dataset
+
+- Inception V1 block was designed as on [Inception Research Paper](https://arxiv.org/pdf/1409.4842.pdf)
 
 Validation Accuracy: 81.11%
 
@@ -64,7 +65,7 @@ Validation Accuracy: 81.11%
 ## 5. VGG-16 and VGG-19 implementation:
 Both VGG-16 and VGG-19 implementation was based on the [research paper](https://arxiv.org/pdf/1409.1556). 
 
-a.  The architectures were tested on Flowers dataset.
-b.  ImagaDataGenerator was used training in each epoch.
+-  The architectures were tested on Flowers dataset.
+-  ImagaDataGenerator was used training in each epoch.
 
 Validation Accuracy: 57%
